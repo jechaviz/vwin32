@@ -29,7 +29,7 @@ pub:
 }
 
 pub fn rect(x int, y int, w int, h int) Rect {
-	return Rect{x, y, x + w, y + h}
+	return Rect{left: x, top: y, right: x + w, bottom: y + h}
 }
 
 pub fn (r Rect) width() int {
